@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/signin_signup"
+    app:startDestination="@id/signIn">
+    <fragment
+        android:id="@+id/forgotPassword"
+        android:name="com.jay.expensetracker.signinactivity.forgotpassword.ForgotPassword"
+        android:label="ForgotPassword">
+        <action
+            android:id="@+id/action_forgotPassword_to_signIn"
+            app:destination="@id/signIn"
+            app:popUpTo="@id/signIn"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/signIn"
+        android:name="com.jay.expensetracker.signinactivity.signin.SignIn"
+        android:label="SignIn">
+        <action
+            android:id="@+id/action_signIn_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_signIn_to_forgotPassword"
+            app:destination="@id/forgotPassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.jay.expensetracker.signinactivity.signup.SignUp"
+        android:label="SignUp">
+        <action
+            android:id="@+id/action_signUp_to_signIn"
+            app:destination="@id/signIn"
+            app:popUpTo="@id/signIn"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>

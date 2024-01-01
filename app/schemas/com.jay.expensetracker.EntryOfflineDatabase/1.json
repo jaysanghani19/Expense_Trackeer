@@ -1,0 +1,64 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "252310d2326b97dadb87db664514be9e",
+    "entities": [
+      {
+        "tableName": "entry_offline_database",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`number_of_entry` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `amount` REAL, `date` TEXT NOT NULL, `category` TEXT NOT NULL, `note` TEXT NOT NULL, `image64_code` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "entryNumber",
+            "columnName": "number_of_entry",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "amount",
+            "columnName": "amount",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "date",
+            "columnName": "date",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "note",
+            "columnName": "note",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "billImageBase64Code",
+            "columnName": "image64_code",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "number_of_entry"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '252310d2326b97dadb87db664514be9e')"
+    ]
+  }
+}

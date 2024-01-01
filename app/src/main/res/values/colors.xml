@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="darkblue">#00008b</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="forgot_password">#b4c5e4</color>
+    <color name="sign_up">#13484F</color>
+    <color name="background">#F0F4F3</color>
+<!--    <color name="background_temp">#F5F5DC</color>-->
+    <color name="cardview_background">#2664BE</color>
+    <color name="cardview_text_color">#FFFFFFFF</color>
+    <color name="cardview_text_color2">#FFE3B3</color>
+    <color name="white_blue">#dee9f2</color>
+    <color name="counter_white_blue">#1a3042</color>
+    <color name="red">#ff0000</color>
+    <color name="graph_1">#ffa600</color>
+    <color name="graph_2">#ff6361</color>
+    <color name="graph_3">#bc5090</color>
+    <color name="graph_4">#58508d</color>
+    <color name="graph_5">#003f5c</color>
+    <color name="transperent_black">#000000B3</color>
+    <!--    <color name="navigationview_color">#009BC0</color>-->
+
+    <!--    <color name="navigationview_color">#43c6b0</color>-->
+<!--    <color name="navigationview_color">#009BC0</color>-->
+    <color name="navigationview_color">#1a3042</color>
+
+
+</resources>

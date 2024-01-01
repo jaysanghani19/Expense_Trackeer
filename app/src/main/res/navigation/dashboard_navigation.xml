@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dashboard_navigation"
+    app:startDestination="@id/dashboard">
+
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.jay.expensetracker.dashboardacitivity.dashboard.Dashboard"
+        android:label="Dashboard" />
+    <fragment
+        android:id="@+id/analysisFragment"
+        android:name="com.jay.expensetracker.dashboardacitivity.analysis.AnalysisFragment"
+        android:label="ActivityFragment"></fragment>
+    <fragment
+        android:id="@+id/profile2"
+        android:name="com.jay.expensetracker.dashboardacitivity.profile.Profile"
+        android:label="Profile">
+
+    </fragment>
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.jay.expensetracker.dashboardacitivity.transaction.TransactionFragment"
+        android:label="TransactionFragment">
+
+    </fragment>
+    <dialog
+        android:id="@+id/progressBarDialog"
+        android:name="com.jay.expensetracker.customlayout.ProgressBarDialog"
+        android:label="ProgressBarDialog" />
+</navigation>
